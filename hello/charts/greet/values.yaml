@@ -1,0 +1,13 @@
+# hello/charts/greet/values.yaml
+replicaCount: 1
+
+image:
+  # 저장소의 위치는 erc를 바라보도록 한다
+  repository: 422546938897.dkr.ecr.ap-northeast-2.amazonaws.com/greet
+  tag: "latest"
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8000 # FastAPI 포트
