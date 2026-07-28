@@ -4,7 +4,7 @@
 fortune:
   replicaCount: 1
   image:
-    tag: "v7"
+    tag: "v8"
 
 greet:
   replicaCount: 1
